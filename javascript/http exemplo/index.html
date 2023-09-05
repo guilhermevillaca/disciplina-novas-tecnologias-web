@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Site de exemplo</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="script.js"></script>
+</head>
+<body>
+
+	<div class="principal">
+		
+		<form id="formulario">
+			<input type="text" name="cepInput" id="cepInput" placeholder="CEP">	
+  			<button type="button" onclick="buscaCep()">Buscar</button>
+		</form>
+
+		<div id="dadosCEP">
+			<p>
+				<b>Bairro:</b> <span id="bairro"></span> <br>
+				<b>CEP:</b> <span id="cep"></span> <br>
+				<b>DDD:</b> <span id="ddd"></span> <br>
+				<b>Localidade:</b> <span id="localidade"></span> - <span id="uf"></span> <br>
+				<b>Logradouro:</b> <span id="logradouro"></span>
+			</p>							
+		</div>
+		
+	</div>
+
+</body>
+</html>
+
+
+
+
