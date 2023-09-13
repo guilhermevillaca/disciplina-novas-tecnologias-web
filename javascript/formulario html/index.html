@@ -2,21 +2,33 @@
   <head>
     <title>Meu Formulário Personalizado</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
-
-
-
   </head>
 	<body>
 
 	  <div>
-	    <form
+
+	    <form>
 	      	        
-	        <label>Nome:</label><input class="campo_nome" type="text"><br>
-	        <label>Email:</label><input class="campo_email" type="email"><br>
-	        <label>Mensagem:</label><br><textarea class="msg" cols="35" rows="8"></textarea><br>
-	        <input class="btn_submit" type="submit" value="Enviar">
+	        <label for="nome">Nome:</label>
+	        <input class="nome" type="text"><br>
+	        
+	        <label for="email">Email:</label>
+	        <input class="email" type="email"><br>
+
+	        <label for="cidade">Cidade</label> <br>
+	        <select name="cidade">
+	        	<option value="cascavel">Cascavel</option>
+	        	<option value="cascavel">Curitiba</option>
+	        </select><br>	  
+
+	        <label form="mensagem">Mensagem:</label><br>
+	        <textarea name="mensagem" cols="35" rows="8"></textarea><br>
+	        
+	        <input type="submit" value="Enviar">
 	      
 	    </form>
+
 	  </div>
+
 	</body>
 </html>
