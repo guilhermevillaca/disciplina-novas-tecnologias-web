@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body {
+  font-family: 'Muli', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  font-size: 12px;  
+}
+
+.topo{
+	color: #fff;
+	margin: 0 auto;
+	padding: 20px;
+	background: blue;
+}
+
+
+@media (max-width: 600px) { 
+.topo { 
+		width: 90%; 
+		background: #030;
+
+	}
+}
+
+@media (max-width: 1000px) and (min-width: 601px) { 
+	.topo { 
+		width: 80%; 
+		background: red;
+
+	}
+}
