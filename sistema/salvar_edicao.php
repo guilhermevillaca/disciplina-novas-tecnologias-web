@@ -1,3 +1,5 @@
+<?php include 'header.php'; ?>
+
 <?php
 
 $servidor = "localhost";
@@ -27,3 +29,9 @@ if (mysqli_query($conexao, $sql)) {
 }
 
 mysqli_close($conexao);
+
+
+?>
+
+
+<?php include 'footer.php'; ?>

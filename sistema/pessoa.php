@@ -1,3 +1,5 @@
+<?php include 'header.php'; ?>
+
 <?php
 
 $servidor = "localhost";
@@ -8,22 +10,23 @@ $conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
 if (!$conexao) {
     die("A conexão falhou: " . mysqli_connect_error());
 }
-echo "Conectado com sucesso!";
+//echo "Conectado com sucesso!";
 
-$id = $_GET['id'];
+
 $nome = $_POST['nome'];
 $data_nascimento = $_POST['data_nascimento'];
 $cpf = $_POST['cpf'];
 
-$sql = "UPDATE pessoa_fisica SET 
-    nome = '$nome', 
-    data_nascimento = '$data_nascimento', 
-    cpf = '$cpf' 
-    WHERE id = " . $id;
+$sql = "INSERT INTO pessoa_fisica (nome, data_nascimento, cpf) VALUES ('$nome', '$data_nascimento', '$cpf')";
 if (mysqli_query($conexao, $sql)) {
-      echo "Dados alterados com sucesso";
+      echo "<br>Novos dados inseridos com sucesso";      
 } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conexao);
 }
 
 mysqli_close($conexao);
+?>
+
+
+
+<?php include 'footer.php'; ?>

@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <title>Pessoa</title>
-</head>
-<body>
+<?php include 'header.php'; ?>    
+
     <form action="pessoa.php" method="post">
         <input type="text" name="nome" id="nome" placeholder="Nome"> <br>
         <input type="date" name="data_nascimento" id="data_nascimento" 
@@ -14,5 +7,6 @@
         <input type="text" name="cpf" id="cpf" placeholder="CPF"> <br>
         <input type="submit" value="Enviar">
     </form>
-</body>
-</html>
+
+
+<?php include 'footer.php'; ?>
