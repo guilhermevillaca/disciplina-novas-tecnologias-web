@@ -11,31 +11,38 @@
 
     <div class="conteudo">
         <header>
-            Cabeçalho
+            <h1>BLOG TADS</h1>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="novo.html">Novo Post</a>
             </nav>
         </header>
 
-        <form>
+        <main>
+            <form>
 
-            <input type="text" placeholder="Código", name="codigo", id="codigo">
+                <h2>Insira o post do BLOG</h2>
 
-            <input type="text" placeholder="Título" 
-            name="titulo" id="titulo">
+                <input type="text" placeholder="Código", name="codigo", id="codigo">
 
-            <textarea name="post_blog" id="post_blog" 
-            cols="30" rows="10"></textarea>
-            
-            <button onclick="salvar()">Salvar</button>
+                <input type="text" placeholder="Título" 
+                name="titulo" id="titulo">
 
-        </form>
+                <textarea name="post_blog" id="post_blog" placeholder="Escreva Aqui"
+                cols="30" rows="10"></textarea>
+                
+                <button onclick="salvar()">Salvar</button>
+
+            </form>
+        </main>
+
         
-        <footer>
-            Rodapé
-        </footer>
     </div>
+
+    
+    <footer>
+        <p>Todos os direitos reservados &copy; 2024</p>
+    </footer>
     
 </body>
 </html>
