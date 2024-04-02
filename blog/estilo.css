@@ -35,6 +35,11 @@ header nav a{
     margin: 10px;
 }
 
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+}
 
 form input, form textarea {
     width: 100%;
