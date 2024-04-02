@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="gravar.js"></script>
+    <script>
+        window.addEventListener("load", (event) => {           
+            var a = allStorage();               
+            a.forEach((element) => {                
+                var posts = JSON.parse(element.split("=")[1]);   
+                var titulo = document.createElement("h1");
+                titulo.innerText = posts.titulo;             
+                var post_blog = document.createElement("p");
+                post_blog.innerText = posts.post_blog;                
+                var artigo = document.getElementById("artigo");                                
+                artigo.appendChild(titulo);
+                artigo.appendChild(post_blog);
+            });
+        })
+    </script>
+</head>
+<body>
+
+    <div class="conteudo">
+        <header>
+            <h1>BLOG TADS</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="novo.html">Novo Post</a>
+            </nav>
+
+            
+        </header>
+        <article id="artigo">
+            Post do BLOG
+            
+        </article>
+        <aside>
+            Sidebar do BLOG
+        </aside>
+        <footer>
+            <p>Todos os direitos reservados &copy; 2024</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
