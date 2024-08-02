@@ -12,3 +12,97 @@ td {
     padding: 15px;
     border-bottom: 1px solid #ddd;
 }
+
+
+
+
+/*Linhas zebradas*/
+
+/* Estilo para tabela com linhas zebradas */
+table.zebra {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.zebra th, table.zebra td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table.zebra tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.zebra tr:hover {
+    background-color: #ddd;
+}
+
+table.zebra th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+/* Estilo para tabela com linhas normais */
+table.normal {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.normal th, table.normal td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table.normal tr:hover {
+    background-color: #ddd;
+}
+
+table.normal th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+/* Estilo bonito para tabela */
+table.bonito {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+table.bonito th, table.bonito td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table.bonito tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table.bonito tr:hover {
+    background-color: #f1f1f1;
+}
+
+table.bonito th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 15px;
+}
+
+table.bonito td {
+    font-size: 14px;
+    color: #333;
+}
